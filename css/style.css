@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.area80{
+    width: 80%;
+    margin: auto;
+}
+
+body{
+    color: #0000008c;
+    font-family: "source sans pro",sans-serif;
+    width: 100%;
+}
+
+h2{
+    margin: 20px auto;
+}
+
+header{
+    background-color: rgb(32, 176, 176);
+    width: 100%;
+    padding: 10px 15px;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header div a:first-child{
+    display: flex;
+    align-items: center;
+}
+
+header a img{
+    height: 6vh;
+}
+
+header div nav{
+    display: flex;
+    gap: 20px;
+}
+
+header nav a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+header nav a:hover{
+    color: #0000008c;
+}
+
+.titulo-sobre{
+    background-image: url("/assets/recepcao.png");
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+
+}
+.titulo-sobre h1{
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 15px;
+    text-shadow: 1px 1px 5px black;
+}
+
+#sobre div:first-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sobre .texto-sobre{
+    text-align: center;
+    justify-content: center;
+}
+
+#sobre .topicos-sobre{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+#sobre .topicos-sobre img{
+    object-fit: contain;
+    /* object-position: top; */
+}
+
+#sobre .topicos-sobre h3{
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+#sobre .topicos-sobre ul{
+    padding: 20px 0px 0px 40px;
+}
+
+#sobre .lista-topicos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#sobre .especialidades-sobre{
+    /* border: red 1px solid; */
+    text-align: center;
+}
+
+.especialidades-sobre h4{
+    margin: 20px auto;
+}
+
+#sobre .imagens{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 25px auto;
+}
+#sobre .imagens figure{
+    width: calc(30%);
+    box-shadow: 0px 0px 10px 1px #0000008c;
+    border-radius: 5px;
+    /* border: 2px red solid; */
+    /* object-fit: cover; */
+}
+
+#sobre .imagens figure:hover{
+    box-shadow: 0px 0px 10px 5px #0000008c;
+    /* font-weight: 500; */
+}
+
+#sobre .imagens figure img{
+    width: 100%;
+    /* object-fit: cover; */
+    border-radius: 5px 5px 0px 0px;
+}
+
+#sobre figcaption{
+    text-transform: uppercase;
+    padding: 6px;
+}
+
+#sobre a:last-of-type{
+    text-transform: uppercase;
+    color: white;
+    background-color: rgb(32, 176, 176);
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    height: 40px;
+}
+#sobre a:last-of-type:hover{
+    color: #0000008c;
+    border: 1px solid #0000008c;
+    padding: 9px 20px;
+}
+
+#contato div:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#contato p{
+    margin: 10px auto;
+}
+#contato span{
+    font-weight: 700;
+}
+#contato a{
+    text-decoration: none;
+    color: #0000008c;
+    font-weight: 700;
+}
+
+#contato iframe{
+    margin: 30px auto;
+    width: 100%;
+    padding: 15px;
+}
+
+footer{
+    background-color: rgb(32, 176, 176);
+}
+footer div:first-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer p{
+    margin: 5px auto;
+}
+footer img{
+    height: 50px;
+    object-fit: contain;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    .topicos-sobre img{
+        display: none;
+    }
+    header div{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header div nav{
+        border-top: 1px solid #0000008c;
+        /* width: 100%; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0px 5px 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .especialidades-sobre .imagens{
+        flex-direction: column;
+        align-items: center;
+    }
+    #sobre .imagens figure{
+        width: calc(80%);
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,111 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+main nav{
+    padding-top: 10px;
+    /* border: 1px solid red; */
+    text-transform: capitalize;
+}
+main nav a{
+    margin: auto 10px;
+    color: #0000008c;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 2px solid rgb(32, 176, 176);
+}
+main nav a:hover{
+    /* text-decoration: underline; */
+    
+    color: rgb(32, 176, 176);
+}
+
+
+.especidalidade-table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.especidalidade-table div{
+    /* display: flex; */
+    /* flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    /* border: 1px solid red; */
+    text-align: center;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.especidalidade-table h3{
+    margin: 20px;
+    text-transform: capitalize;
+}
+.especidalidade-table p{
+    width: 70%;
+    margin:0px auto 20px auto;
+}
+
+.especidalidade-table figure{
+    display: flex;
+    /* border: 3px green solid; */
+}
+
+.especidalidade-table figure img{
+    min-width: 250px;
+    height: 200px;
+    /* border: 2px black solid; */
+    object-fit: cover;
+    object-position: center;
+}
+
+.especidalidade-table table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+}
+
+.especidalidade-table table th{
+    color: white;
+    padding: 8px 0px 8px 10px;
+}
+
+.especidalidade-table table td{
+    padding-left: 10px;
+}
+
+.especidalidade-table table thead tr{
+    background-color: rgb(32, 176, 176);
+    text-transform: capitalize;
+}
+
+.especidalidade-table table tbody tr:nth-child(odd){
+    background-color: rgb(177, 177, 177);
+}
+.especidalidade-table table tbody tr:nth-child(even){
+    background-color: rgb(240, 240, 240);
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .especidalidade-table figure img{
+        display: none;
+    }
+    .especidalidade-table div{
+        width: 90%;
+    }
+
+}
+@media screen and (max-width: 425px) {
+    .especidalidade-table div{
+        width: 100%;
+    }
+}
