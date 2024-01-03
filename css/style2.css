@@ -34,11 +34,6 @@ main nav a:hover{
 }
 
 .especidalidade-table div{
-    /* display: flex; */
-    /* flex-direction: column;
-    align-items: center;
-    justify-content: center; */
-    /* border: 1px solid red; */
     text-align: center;
     width: 80%;
     margin-bottom: 20px;
@@ -55,13 +50,11 @@ main nav a:hover{
 
 .especidalidade-table figure{
     display: flex;
-    /* border: 3px green solid; */
 }
 
 .especidalidade-table figure img{
     min-width: 250px;
     height: 200px;
-    /* border: 2px black solid; */
     object-fit: cover;
     object-position: center;
 }
@@ -72,9 +65,21 @@ main nav a:hover{
     text-align: left;
 }
 
+.especidalidade-table table th:nth-child(1){
+    min-width: 40%;
+}
+.especidalidade-table table th:nth-child(2){
+    min-width: 104px;
+    max-width: 20%;
+}
+.especidalidade-table table th:nth-child(3){
+    min-width: 40%;
+}
+
 .especidalidade-table table th{
     color: white;
-    padding: 8px 0px 8px 10px;
+    padding-left: 10px;
+    height: 40px;
 }
 
 .especidalidade-table table td{
@@ -104,8 +109,14 @@ main nav a:hover{
     }
 
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 585px) {
     .especidalidade-table div{
-        width: 100%;
+        width: 98%;
+    }
+    main nav a{
+        line-height: 25px;
+    }
+    .especidalidade-table p{
+        width: 90%;
     }
 }
