@@ -193,6 +193,7 @@ header nav a:hover{
 
 footer{
     background-color: rgb(32, 176, 176);
+    padding: 15px 0px;
 }
 footer div:first-child{
     display: flex;
